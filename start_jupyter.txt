@@ -1,0 +1,5 @@
+salloc --nodes=1 --ntasks=1 --mem=16G --time=03:00:00 # --gres=gpu:1
+export XDG_RUNTIME_DIR=""
+module load anaconda3/2024.6
+jupyter-notebook --no-browser --port=8889 --ip=0.0.0.0
+
